@@ -1,26 +1,26 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Symptom Checker Chatbot",
+    "imageSrc": "projects/bot.png",
+    "description": "Created a real-time symptom checker chatbot using LLaMA and Groq API, deployed via Streamlit.",
+    "skills": ["LLaMA", "Groq API", "Streamlit", "NLP"],
+    "demo": "https://patientsymptomchecker-py8uvjapo9yvb96jtxtkk3.streamlit.app/",
+    "source": "https://github.com/LakshmiKandakumar/symptom-checker"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "ToDo List (MERN Stack)",
+    "imageSrc": "projects/todo.png",
+    "description": "Built a ToDo List app with CRUD operations using the MERN stack, deployed via Netlify (frontend) and Render (backend).",
+    "skills": ["React", "Express", "Node.js", "MongoDB"],
+    "demo": "https://myprojecttodolist.netlify.app/",
+    "source": "https://github.com/LakshmiKandakumar/todoapp"
   },
   {
-    "title": "Project C",
+    "title": "Vehicle Count Prediction",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "description": "Developed a YOLO-based vehicle count prediction system for real-time object detection and traffic monitoring.",
+    "skills": ["YOLOv5", "Streamlit", "PyTorch"],
+    "screenshot": "projects/image.png",
+    "source": "https://github.com/LakshmiKandakumar/vechicalcount"
   }
 ]

@@ -1,29 +1,28 @@
 [
-  {
-    "role": "Software Engineer",
-    "organisation": "Google",
-    "startDate": "Sept, 2022",
-    "endDate": "Present",
-    "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-    "imageSrc": "history/google.png"
+  {"role": "SEO & Data Analyst Intern (Offline)",
+    "organisation": "Pixel Studios",
+    "startDate": "Jun, 2024",
+    "endDate": "Jul, 2024",
+    "experiences": ["Conducted traffic forecasting and built SEO-focused dashboards using Looker Studio for data-driven insights"],
+    "imageSrc": "history/pixelstudios.png"
+    
   },
   {
-    "role": "UI Designer",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2021",
-    "endDate": "Aug, 2022",
-    "experiences": ["Worked on Windows 11", "Designed the control panel"],
-    "imageSrc": "history/microsoft.png"
+    "role": "Data Science & Machine Learning Intern (Virtual)",
+    "organisation": "YBI Foundation",
+    "startDate": "May, 2023",
+    "endDate": "Jun, 2023",
+    "experiences": ["Completed a foundational internship in Data Science and ML with hands-on projects using Python and core libraries"],
+    "imageSrc": "history/ybi.png"
   },
   {
-    "role": "SWE Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2020",
-    "endDate": "Jun, 2020",
+    "role": "Frontend & Backend Intern (Remote)",
+    "organisation": "Stable Code",
+    "startDate": "Jun, 2025",
+    "endDate": "Jul, 2025",
     "experiences": [
-      "Worked on component library",
-      "Helped create UI components"
+      "Developed and deployed portfolio and todo list apps using the MERN stack with full-stack implementation and UI design in React"
     ],
-    "imageSrc": "history/netflix.png"
+    "imageSrc": "history/stablecode.png"
   }
 ]

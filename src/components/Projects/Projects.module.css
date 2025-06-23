@@ -12,15 +12,15 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .projects {
   margin-top: 37px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 15px;
-  width: 100%;
+  gap: 24px;
+  align-items: stretch; /* 🔥 Ensures equal height alignment */
 }
+

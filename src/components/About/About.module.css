@@ -9,6 +9,7 @@
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
+  box-shadow: 0 0 40px rgba(165, 215, 232, 0.15); /* ✨ Soft glow */
 }
 
 .title {
@@ -34,6 +35,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-top: 29px;
 }
 
 .aboutItem {
@@ -50,16 +52,21 @@
   );
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: 0.4s;
+  transition: 0.4s ease-in-out; /* ✨ Smooth interaction */
 }
 
 .aboutItem:hover {
   background-size: 100% 100%;
+  filter: brightness(1.15); /* ✨ Bright hover */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* ✨ Glow */
+  transform: scale(1.02); /* ✨ Subtle zoom */
 }
 
 .aboutItem h3 {
   font-size: 25px;
   font-weight: 600;
+  color: #ffcf33; /* Brighter highlight */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* ✨ Better contrast */
 }
 
 .aboutItem p {
@@ -89,4 +96,15 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .aboutItems a {
+  color: #00e0ff; /* Bright cyan or choose any bright color */
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.aboutItems a:hover {
+  color: #ffffff; /* Brighter on hover */
+}
+
 }

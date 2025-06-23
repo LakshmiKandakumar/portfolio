@@ -9,7 +9,7 @@
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
-  box-shadow: 0 0 40px rgba(165, 215, 232, 0.15); /* ✨ Soft glow */
+  box-shadow: 0 0 40px rgba(165, 215, 232, 0.15);
 }
 
 .title {
@@ -18,30 +18,38 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .content {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .aboutImage {
   width: 35%;
+  max-width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .aboutItems {
   color: var(--color-text);
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  margin-top: 29px;
+  gap: 40px;
+  flex: 1;
+  margin-top: 20px;
 }
 
 .aboutItem {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   border-radius: 20px;
   list-style: none;
   padding: 25px;
@@ -52,59 +60,69 @@
   );
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: 0.4s ease-in-out; /* ✨ Smooth interaction */
+  transition: 0.4s ease-in-out;
 }
 
 .aboutItem:hover {
   background-size: 100% 100%;
-  filter: brightness(1.15); /* ✨ Bright hover */
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* ✨ Glow */
-  transform: scale(1.02); /* ✨ Subtle zoom */
+  filter: brightness(1.15);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
 }
 
 .aboutItem h3 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
-  color: #ffcf33; /* Brighter highlight */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* ✨ Better contrast */
+  color: #ffcf33;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  margin-bottom: 6px;
 }
 
 .aboutItem p {
-  font-size: 25px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-@media screen and (max-width: 830px) {
-  .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .content {
-    flex-direction: column;
-  }
-
-  .aboutImage {
-    display: none;
-  }
-
-  .aboutItems {
-    margin-top: 29px;
-  }
-
-  .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .aboutItems a {
-  color: #00e0ff; /* Bright cyan or choose any bright color */
+.aboutItems a {
+  color: #00e0ff;
   font-weight: 600;
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
 .aboutItems a:hover {
-  color: #ffffff; /* Brighter on hover */
+  color: #ffffff;
 }
 
+/* ✅ Mobile responsiveness */
+@media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding: 30px 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+
+  .aboutItem {
+    align-items: center;
+    padding: 20px;
+  }
+
+  .aboutItem h3 {
+    font-size: 20px;
+  }
+
+  .aboutItem p {
+    font-size: 16px;
+  }
 }

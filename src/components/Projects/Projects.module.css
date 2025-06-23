@@ -21,6 +21,20 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  align-items: stretch; /* 🔥 Ensures equal height alignment */
+  align-items: stretch; /* Keeps cards same height */
 }
+@media (max-width: 600px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
+  .title {
+    font-size: 24px;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}

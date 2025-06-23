@@ -1,5 +1,6 @@
 @import "../../vars.css";
 
+/* ✅ Container styles for all views */
 .container {
   display: flex;
   flex-direction: column;
@@ -8,73 +9,67 @@
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 345px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* ✅ Image at the top */
 .image {
+  width: 100%;
   margin-bottom: 26px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
+/* ✅ Title and description */
 .title {
   font-size: 25px;
   font-weight: 700;
-  color: #ffc400; /* You can change this to any color */
+  color: #ffc400;
 }
 
 .description {
   margin-top: 6px;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 400;
+  color: var(--color-text);
 }
 
+/* ✅ Skills section */
 .skills {
   width: 100%;
   margin-top: 14px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   list-style: none;
+  justify-content: flex-start;
 }
 
 .skill {
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   border-radius: 100px;
   background: var(--color-dark);
-  padding: 2px 22px;
-  color:hotpink;
+  padding: 4px 16px;
+  color: hotpink;
 }
 
+/* ✅ Buttons and links */
 .links {
   width: 100%;
-  margin-top: 26px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.link {
-  text-decoration: none;
-  color: var(--color-text);
-  font-size: 30px;
-  font-weight: 600;
-  border-radius: 100px;
-  background: var(--color-primary);
-  padding: 1px 22px;
-  color:beige;
-}
-.links {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
-  margin-top: 20px;
 }
 
 .link {
   background: var(--color-primary);
   color: beige;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   border-radius: 100px;
   padding: 10px 20px;
@@ -88,9 +83,58 @@
   text-transform: uppercase;
 }
 
-/* Optional: Hover effect */
 .link:hover {
   background-color: #ffc400;
   color: #000;
 }
 
+/* ✅ Screenshot styling */
+.screenshot {
+  width: 100%;
+  margin-top: 16px;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+/* ✅ Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .container {
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .skill {
+    font-size: 14px;
+    padding: 4px 12px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .link {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .screenshot {
+    max-height: 160px;
+  }
+}
